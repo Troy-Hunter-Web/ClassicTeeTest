@@ -57,6 +57,10 @@ div {
     padding: .5em;
     margin-right: 0.2em;
     border: solid 2px #CCCCCC; }
+  .size-selection .small.two {
+    padding: .5em;
+    margin-right: 0.2em;
+    border: solid 2px #222222; }
   .size-selection .medium {
     padding: .5em;
     border: solid 2px #CCCCCC;
