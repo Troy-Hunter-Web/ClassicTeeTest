@@ -22,7 +22,7 @@ header {
   margin-top: 2em; }
 
 img {
-  width: 90vw;
+  width: 90%;
   max-height: 80vh;
   margin-bottom: 2em; }
 
@@ -74,8 +74,38 @@ div {
   border: solid 2px #222222;
   padding: .5em; }
 
+.add-cart:hover {
+  background-color: #222222;
+  color: white; }
+
 /*for small tablet - inclusive*/
+@media only screen and (min-width: 40em) {
+  #content {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%; }
+
+  .item-photo {
+    flex: 50%; }
+    .item-photo img {
+      width: 100%;
+      display: block;
+      margin: auto; }
+
+  .item-desc {
+    flex: 50%; } }
 /*for tablet - inclusive*/
+@media only screen and (min-width: 60em) {
+  .item-photo img {
+    width: 70%; } }
 /*for destop - inclusive*/
+@media only screen and (min-width: 80em) {
+  body {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .item-photo img {
+    width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
