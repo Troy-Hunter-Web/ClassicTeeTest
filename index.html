@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 	<title>Developer-Test</title>
 </head>
 <body>
 	<header>
-			My Cart
-			<div class="cartIcon">	</div>
+		<i class="fas fa-shopping-cart"></i>
+		(0)
 	</header>
 
 	<div id="content">	
@@ -21,10 +23,15 @@
 			<h4 class="item-price">$75.00</h4>
 			<p class="item-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			<div class="item-size">
-				SIZE*
+				SIZE<span style="color: #C90000">*</span>
+				<span id="size-selected"></span>
 			</div>
-			<span class="size-selected"></span>
-			<div class="size-selection">S M L</div>
+			
+			<div class="size-selection">
+				<div class="small" onclick="document.getElementById('size-selected').innerHTML = 'S'">S</div>
+				<div class="medium" onclick="document.getElementById('size-selected').innerHTML = 'M'">M</div>
+				<div class="large" onclick="document.getElementById('size-selected').innerHTML = 'L'">L</div>
+			</div>
 			<div class="add-cart">ADD TO CART</div>
 		</div>	
 
@@ -32,4 +39,5 @@
 
 	
 </body>
+
 </html>

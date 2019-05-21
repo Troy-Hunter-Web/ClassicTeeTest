@@ -5,6 +5,88 @@
 }
 
 
+header{
+	display: flex;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-right: 2em;
+	height:3em;
+	background-color: $header-color;
+	justify-content: flex-end;
+	align-items: center;
+	color: $font-two;
+	i{
+		margin-right: 1em;
+	}
+}
+
+#content{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 2em;
+}
+
+img {
+ 	width:90vw;
+ 	max-height: 80vh;
+ 	margin-bottom: 2em;
+}
+
+h2{
+	color:$font-one;
+}
+
+h4{
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	color:$font-one;
+}
+
+div{
+	color:$font-two;
+}
+
+#size-selected{
+	color:$font-one;
+}
+
+.add-cart{
+	color:$font-one;
+}
+
+.item-description{
+	margin-bottom: 2em;
+}
+
+.item-size{
+	margin-bottom: 1em;
+}
+
+.size-selection{
+	margin-bottom: 1em;
+	display:flex;
+	.small{
+		padding: .5em;
+		margin-right: 0.2em;
+		border:solid 2px $border-one;
+	}
+	.medium{
+		padding: .5em;
+		border:solid 2px $border-one;
+		margin-right: 0.2em;
+	}
+	.large{
+		padding: .5em;
+		border:solid 2px $border-one;
+	}
+}
+
+.add-cart{
+	display:inline-block;
+	border:solid 2px $border-two;
+	padding: .5em;
+}
 /*for small tablet - inclusive*/
 @media only screen and (min-width: 40em) {
 
@@ -13,7 +95,7 @@
 
 /*for tablet - inclusive*/
 @media only screen and (min-width: 60em) {
-}
+
 
 }
 
