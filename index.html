@@ -5,13 +5,33 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
 	<title>Developer-Test</title>
 </head>
 <body>
 	<header>
-		<i class="fas fa-shopping-cart"></i>
-		(0)
+		<div class="checkout">
+			<span>My Cart</span>
+			<i class="fas fa-shopping-cart"></i>
+			(0)
+			<div class="list">
+     			<div class="cart-item">
+     				<img src="images/classic-tee.jpg" alt="Classic-white-tee">
+     				<div class="cart-item-group">
+	     				<div class="cart-item-name">Classic Tee</div>
+	     				<div class="cart-item-price">1x $75.00</div>
+	     				<div class="cart-item-size">Size: S</div>
+     				</div>
+     			</div>
+     			<div class="cart-item">
+     				<img src="images/classic-tee.jpg" alt="Classic-white-tee">
+     				<div class="cart-item-group">
+	     				<div class="cart-item-name">Classic Tee</div>
+	     				<div class="cart-item-price">3x $75.00</div>
+	     				<div class="cart-item-size">Size: L</div>
+     				</div>
+     			</div>
+   			</div>
+        </div>
 	</header>
 
 	<div id="content">	
@@ -40,38 +60,5 @@
 	
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-	$(function () {
-		$('.small').on('click', function () {
-			$('.medium').css('border-color', 'grey');
-			$('.large').css('border-color', 'grey');
-			$('#size-selected').html("");
-			$('#size-selected').append("S");
-			$('.small').css('border-color', 'black');
-		});
-	});
-	$(function () {
-		$('.medium').on('click', function () {
-			$('.small').css('border-color', 'grey');
-			$('.large').css('border-color', 'grey');
-			$('#size-selected').html("");
-			$('#size-selected').append("M");
-			$('.medium').css('border-color', 'black');
-		});
-	});
-	$(function () {
-		$('.large').on('click', function () {
-			$('.medium').css('border-color', 'grey');
-			$('.small').css('border-color', 'grey');
-			$('#size-selected').html("");
-			$('#size-selected').append("L");
-			$('.large').css('border-color', 'black');
-		});
-	});
-
-</script>
-
-
+<script src="js/script.js"></script>
 </html>

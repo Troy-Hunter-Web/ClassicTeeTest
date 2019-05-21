@@ -15,6 +15,30 @@ header {
   color: #888888; }
   header i {
     margin-right: 1em; }
+  header span {
+    font-size: 0; }
+
+.list {
+  background-color: white;
+  height: 250px;
+  width: 300px;
+  border: 2px solid #CCCCCC;
+  right: 200px;
+  position: absolute;
+  transition: 1s all;
+  transform: scale(0);
+  transform-origin: 100% 0%; }
+
+.checkout:hover > .list {
+  transform: scale(1); }
+
+.cart-item {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly; }
+  .cart-item img {
+    width: 20%;
+    height: 20%; }
 
 #content {
   margin-left: 5vw;
@@ -76,10 +100,15 @@ div {
 
 .add-cart:hover {
   background-color: #222222;
-  color: white; }
+  color: white;
+  transition: 0.2s; }
 
 /*for small tablet - inclusive*/
 @media only screen and (min-width: 40em) {
+  header span {
+    font-size: 12px;
+    margin-right: 0.5em; }
+
   #content {
     display: inline-flex;
     justify-content: space-evenly;
