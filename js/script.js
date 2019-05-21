@@ -1,3 +1,6 @@
+	
+// functions when size is clicked display size
+
 	$(function () {
 		$('.small').on('click', function () {
 			$('.medium').css('border-color', 'grey');
